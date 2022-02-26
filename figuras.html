@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras</title>
+    <style>
+        body {
+            border: 0px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h1 {
+            align-items: center;
+        }
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            width: 500px;
+        }
+        .cuadrado, .triangulo, .circulo, .isosceles {
+            display: flex;
+            flex-direction: column;
+            width:100%;
+            padding: 20px;
+            background-color: #98bfd1;
+            border-radius: 8px;
+        }
+        .cuadrado div {
+            align-items: center;
+        }
+        div input {
+            margin-top: 10px;
+        }
+    </style>
+    <script src="./funciones.js"></script>
+</head>
+<body>
+    <div class="contenedor"> 
+        <h1>Calculando Figuras Geométricas</h1> 
+        <section>
+            <form action="">
+                <h2>Cuadrado</h2>
+                <div class="cuadrado">
+                    <label for="cuad">Lado:</label>
+                    <input type="number" id="cuad">
+                    <div>
+                        <input type="submit" value="PERIMETRO" onclick="pcuadrado()">
+                        <input type="submit" value="AREA" onclick="acuadrado()">
+                    </div>
+                </div>
+            </form>
+            <form action="">
+                <h2>Triangulo</h2>
+                <div class="triangulo">
+                    <label for="tri1">Lado 1:</label>
+                    <input type="number" id="tri1">
+                    <label for="tri2">Lado 2:</label>
+                    <input type="number" id="tri2">
+                    <label for="bas">Base:</label>
+                    <input type="number" id="bas">
+                    <label for="alt">Altura:</label>
+                    <input type="number" id="alt">
+                    <div>
+                        <input type="submit" value="PERIMETRO" onclick="ptriangulo()">
+                        <input type="submit" value="AREA" onclick="atriangulo()">
+                    </div>
+                </div>
+            </form>
+            <form action="">
+                <h2>Circulo</h2>
+                <div class="circulo">
+                    <label for="cir">Radio:</label>
+                    <input type="number" id="cir">
+                    <div>
+                        <input type="submit" value="PERIMETRO" onclick="pcirculo()">
+                        <input type="submit" value="AREA" onclick="acirculo()">
+                    </div>
+                </div>
+            </form>
+            <form action="">
+                <h2>Isosceles</h2>
+                <div class="isosceles">
+                    <label for="lad1">Lado 1:</label>
+                    <input type="number" id="lad1">
+                    <label for="lad2">Lado 2:</label>
+                    <input type="number" id="lad2">
+                    <label for="lad3">Base:</label>
+                    <input type="number" id="lad3">
+                    <div>
+                        <input type="submit" value="VERIFICAR" onclick="hisosceles()">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+   
+</body>
+</html>
