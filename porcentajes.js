@@ -23,5 +23,5 @@ function entradas(){
     const precioProducto = precioProduct(desc,precio);
  
     const resultPrecio = document.getElementById("result");
-    resultPrecio.innerText = "El precio del producto con descuento es:";
+    resultPrecio.innerText = `El precio del producto con descuento es: ${precioProducto}`;
 }
